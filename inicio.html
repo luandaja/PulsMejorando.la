@@ -2,15 +2,20 @@
 <html>
 <head>
 	<meta charset="utf-8"/>
-	<meta description="Ejercicio - Primeros pasos en html "/>
+	<meta name="description" content="Ejercicio - Primeros pasos en html "/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimun-scale=1"/>
 	<title>Puls Perú</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="normalize.css" />
+	<link rel="stylesheet" href="estilo.css" />
+
 </head>
 <body>
 	<header>
 		<figure id="logo">
 			<img src="logo.png"/>
 		</figure>
-		<h1> Puls Perú: COmunidad de conocimiento </h1>
+		<h1> Puls Perú: Comunidad de conocimiento </h1>
 		<figure id="avatar">
 			<img src="avatar.jpg"/>
 		</figure>
@@ -22,10 +27,17 @@
 			<li><a href="#">CSS3</a></li>
 			<li><a href="#">Django</a></li>
 			<li id="publicar_nav">
-				<a href="#">Publicar</a></li>
+				<a href="#" class="icon-lapiz">Publicar</a></li>
 
 		</ul>
 	</nav>
+
+	<form actions="" id="formulario" class="formulario">
+		<input type="text" id="titulo" required placeholder="Título"></input>
+		<input type="url" id="url" required placeholder="Link"></input>
+		<input type="submit" value="Agregar"/>
+	</form>
+
 	<section id="contenido">
 		<article class="item">
 			<figure class="imagen_item">
@@ -44,14 +56,98 @@
 				<span class="fecha_item">
 					hace <strong>5</strong> min
 				</span>
-				<a href="#" class="comentarios_item">69</a>
-				<a href="#" class="guardar_item"></a>
 			</div>
 			<div class="votacion">
-				<a href="#">up</a>
+				<a href="#" class="up icon-f-arriba"></a>
 				720
-				<a href="#">down</a>
+				<a href="#" class="down icon-f-abajo"></a>
+				<a href="#" class="comentarios_item">69</a>
 
+				<a href="#" class="guardar_item icon-estrella"></a>
+			</div>
+
+		</article>
+
+		<article class="item">
+			<figure class="imagen_item">
+				<img src="imagen.jpg"/>
+			</figure>
+			<h2 class="titulo_item">
+				<a href="#">
+				Título del artículo
+				</a>
+			</h2>
+			<div class="autor_item">
+				por <a href="#">Luis del Águila</a>
+			</div>
+			<div class="datos_item">
+				<a href="#" class="tag_item">Luan</a>
+				<span class="fecha_item">
+					hace <strong>5</strong> min
+				</span>
+			</div>
+			<div class="votacion">
+				<a href="#" class="up icon-f-arriba"></a>
+				720
+				<a href="#" class="down icon-f-abajo"></a>
+				<a href="#" class="comentarios_item">69</a>
+
+				<a href="#" class="guardar_item icon-estrella"></a>
+			</div>
+		</article>
+<article class="item">
+			<figure class="imagen_item">
+				<img src="imagen.jpg"/>
+			</figure>
+			<h2 class="titulo_item">
+				<a href="#">
+				Título del artículo
+				</a>
+			</h2>
+			<div class="autor_item">
+				por <a href="#">Luis del Águila</a>
+			</div>
+			<div class="datos_item">
+				<a href="#" class="tag_item">Luan</a>
+				<span class="fecha_item">
+					hace <strong>5</strong> min
+				</span>
+			</div>
+			<div class="votacion">
+				<a href="#" class="up icon-f-arriba"></a>
+				720
+				<a href="#" class="down icon-f-abajo"></a>
+				<a href="#" class="comentarios_item">69</a>
+
+				<a href="#" class="guardar_item icon-estrella"></a>
+			</div>
+
+		</article>
+<article class="item">
+			<figure class="imagen_item">
+				<img src="imagen.jpg"/>
+			</figure>
+			<h2 class="titulo_item">
+				<a href="#">
+				Título del artículo
+				</a>
+			</h2>
+			<div class="autor_item">
+				por <a href="#">Luis del Águila</a>
+			</div>
+			<div class="datos_item">
+				<a href="#" class="tag_item">Luan</a>
+				<span class="fecha_item">
+					hace <strong>5</strong> min
+				</span>
+			</div>
+			<div class="votacion">
+				<a href="#" class="up icon-f-arriba"></a>
+				720
+				<a href="#" class="down icon-f-abajo"></a>
+				<a href="#" class="comentarios_item">69</a>
+
+				<a href="#" class="guardar_item icon-estrella"></a>
 			</div>
 
 		</article>
