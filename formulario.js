@@ -5,9 +5,27 @@ var $form = $('#formulario'),
 	$list = $('#contenido'),
 	$post = $('.item').first();
 
+if(localStorage.getItem('autosave')){
+	$titulo.val(sessionStorage.getItem('titulo'));
+	$url.val(sessionStorage.getItem('url'));
+}
+
+var id = setInterval(guardarTitulo,1000)
+
+function guardarTitulo(){
+	sessionStorage.setItem('titulo',$titulo.val());
+	sessionStorage.setItem('url',$url.val());
+
+}
+
 function mostrarFormulario(){
 	$form.slideToggle();
+	$list.slideToggle();
 	return false;
+}
+
+function limpiarCampos(){
+	$titulo.val() = "";
 }
 
 function agregarPost(){
@@ -21,6 +39,8 @@ function agregarPost(){
 	$clon.hide();
 	$list.prepend($clon);
 	$clon.fadeIn();
+	mostrarFormulario();
+	limpiarCampos();
 	return false;
 }
 

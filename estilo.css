@@ -150,8 +150,13 @@ nav ul
 nav ul #publicar_nav
 {
 	position: absolute;
-	top: -0.5em;
+	top: -0.1em;
 	right: 0;
+}
+
+nav ul #publicar_nav a.disabled{
+	background-color: grey;
+	point: disabled;
 }
 nav ul #publicar_nav .icon-lapiz:before{
 	transition: 0.3s;
